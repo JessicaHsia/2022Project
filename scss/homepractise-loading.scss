@@ -1,0 +1,124 @@
+$color_yellow_light: lightyellow;
+$color_peru_dark: peru;
+$scene_glod_gradient: (
+    320deg,
+    $color_yellow_light,
+    $color_peru_dark
+);
+
+@import "function";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    @include size(100%, 100vh, 0);
+    @include flex(center, center);
+    flex-direction: column;
+    // background-color: teal;
+}
+
+.container {
+    @include size(200px, 200px, 50%, unset);
+
+    @include flex(center, center);
+    position: relative;
+    animation: around 1s+2s linear 0s infinite;
+
+    .circle1 {
+        @include size(25px, 25px, 50%, teal);
+        display: flex;
+        position: absolute;
+        top: -5px;
+        left: 40px;
+        animation: color random()*2s+1s linear random()*0.5s infinite;
+    }
+
+    .circle2 {
+        @include size(25px, 25px, 50%, peru);
+        position: absolute;
+        top: 20px;
+        left: 160px;
+        animation: color random()*2s+1s linear random()*0.5s infinite;
+    }
+
+    .circle3 {
+        @include size(25px, 25px, 50%, lightskyblue);
+        position: absolute;
+        top: 140px;
+        left: 170px;
+        animation: color random()*2s+1s linear random()*0.5s infinite;
+    }
+
+    .circle4 {
+        @include size(25px, 25px, 50%, lightpink);
+        position: absolute;
+        top: 180px;
+        left: 55px;
+        animation: color random()*2s+1s linear random()*0.5s infinite;
+    }
+
+    .circle5 {
+        @include size(25px, 25px, 50%, gold);
+        position: absolute;
+        top: 90px;
+        left: -15px;
+        animation: color random()*2s+1s linear random()*0.5s infinite;
+    }
+}
+
+.loading h3 {
+    width: 100px;
+    color: darkgray;
+    display: flex;
+    transform: translate(20%, -580%);
+    // font-size: 25px;
+}
+
+@keyframes around {
+    0% {
+        // top: -169px;
+        // left: 85px;
+        transform: rotate(0);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100% {
+        // top: -10px;
+        // left: 252px;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color {
+    0% {
+        background-color: peru;
+    }
+
+    50% {
+        background-color: lightpink;
+    }
+
+    75% {
+        background-color: lightskyblue;
+    }
+}
+
+@keyframes loading {
+    100% {
+        width: 150px;
+    }
+}
