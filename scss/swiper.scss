@@ -37,6 +37,15 @@ main {
                         }
                     }
 
+                    span{
+                        font-family: cursive;
+                        writing-mode: vertical-lr;
+                        width: 80px;
+                        height: 250px;
+                        @include flex(flex-start, center);
+                        @include font(18px, black, 100, unset, 1px);
+                    }
+
                     &:nth-of-type(3){
                         img{
                             border-radius: 50%;

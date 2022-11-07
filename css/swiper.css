@@ -57,6 +57,20 @@ main .swiper-area .swiper .swiper-wrapper .swiper-slide p a {
 main .swiper-area .swiper .swiper-wrapper .swiper-slide p:hover {
   transform: scale(1.1);
 }
+main .swiper-area .swiper .swiper-wrapper .swiper-slide span {
+  font-family: cursive;
+  writing-mode: vertical-lr;
+  width: 80px;
+  height: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+  font-weight: 100;
+  line-height: unset;
+  letter-spacing: 1px;
+}
 main .swiper-area .swiper .swiper-wrapper .swiper-slide:nth-of-type(3) img {
   border-radius: 50%;
 }
