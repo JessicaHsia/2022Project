@@ -29,7 +29,7 @@ header {
 
         li {
             @include flex(center, center);
-            @include size(150px, 50px, 10%, unset);
+            @include size(150px, 50px, 0 0 10% 10%, unset);
             @include font(18px, black, 200, unset, 2px);
 
             &:hover {
@@ -77,15 +77,48 @@ header {
 }
 
 main {
-    @include size(calc(100% - 20%), 600px, unset, unset);
+    @include size(calc(100% - 20%), 500px, unset, unset);
     // rgba(237, 214, 157, 0.119)
     @include pos(absolute, 10%, 20%);
+
+    .team-project{
+        display: none;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5% 0 0 20%;
+        li{
+            @include flex(center, flex-start);
+            flex-direction: column;
+            width: 300px;
+            a{
+                @include size(250px, 200px, unset, unset);
+                @include flex(center, center);
+                flex-direction: column;
+                @include font(12px, black, 100, unset, 2px);
+
+                img{
+                    @include size(200px, 200px, unset, unset);
+                    object-fit: cover;
+                    object-position: left;
+                    padding-right: 20px;
+                }
+                &:nth-of-type(2){
+                    padding: 50px 0 0 100px;
+                }
+            }
+            
+            a:hover{
+                transform: scale(1.1);
+            }
+        }
+        
+    }
 }
 
 @media (max-width: 1024px) {
     nav{
         #my_name{
-            padding-left: calc(100% - 70%);
+            padding-left: 300px;
         }
     }
     
@@ -96,5 +129,24 @@ main {
     main{
         @include size(100%, 400px, unset, unset); 
         @include pos(absolute, 10%, 0%);
+    }
+}
+
+
+@media (max-width: 760px) {
+    nav{
+        #my_name{
+            padding-left: 60px;
+        }
+    }
+
+    main{
+        .team-project{
+            padding: 5% 0 0 5%;
+            flex-direction: column;
+            li{
+                padding: 50px 0;
+            }
+        }
     }
 }

@@ -20,7 +20,7 @@ a {
 }
 
 nav .hambar-box {
-  padding-left: 20px;
+  padding-left: 30px;
   display: none;
 }
 nav .hambar-box .menu_all {
@@ -51,16 +51,16 @@ nav .hambar-box .menu-1 {
 nav .hambar-box .menu-1 li {
   width: 100%;
   text-align: center;
-  padding: 10px;
-  border-radius: 10%;
+  margin: 5px 0;
+  border-radius: 0 0 10% 10%;
   border-bottom: 2px solid rgba(101, 0, 119, 0.7176470588);
-}
-nav .hambar-box .menu-1 li a {
-  display: block;
   font-size: 18px;
   color: black;
+  font-weight: 200;
+  line-height: unset;
+  letter-spacing: 2px;
 }
-nav .hambar-box .menu-1 li a:hover {
+nav .hambar-box .menu-1 li:hover {
   background-color: lightgray;
   color: #FFF;
 }
@@ -71,7 +71,7 @@ nav .hambar-box .menu-show {
   align-items: center;
 }
 
-@media screen and (min-width: 430px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   nav .hambar-box {
     display: block;
   }
