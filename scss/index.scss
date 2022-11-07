@@ -95,7 +95,7 @@ main {
         width: 0;
     }
     main{
-        @include size(100%, 600px, unset, unset); 
+        @include size(100%, 400px, unset, unset); 
         @include pos(absolute, 10%, 0%);
     }
 }
