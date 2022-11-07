@@ -142,7 +142,7 @@ main {
   left: 20%;
 }
 
-@media screen and (min-width: 430px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   nav #my_name {
     padding-left: 30%;
   }
@@ -159,4 +159,4 @@ main {
     top: 10%;
     left: 0%;
   }
-}/*# sourceMappingURL=JessicaHsia.css.map */
+}/*# sourceMappingURL=index.css.map */

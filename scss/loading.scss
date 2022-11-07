@@ -45,7 +45,7 @@
     .loading h3 {
         width: 100px;
         color: darkgray;
-        @include pos(fixed, 39%, 45.8%);
+        @include pos(absolute, 39%, 46.5%);
         letter-spacing: 2px;
     }
 
@@ -89,6 +89,29 @@
         }
     }
 }
-.offload{
+
+.offload {
     display: none;
+}
+
+@media (max-width: 1024px) {
+    #preloader {
+        .loading h3{
+            left: 48%;
+        }
+    }
+}
+@media (max-width: 720px) {
+    #preloader {
+        .loading h3{
+            left: 50%;
+        }
+    }
+}
+@media (max-width: 590px) {
+    #preloader {
+        .loading h3{
+            left: 52%;
+        }
+    }
 }

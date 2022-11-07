@@ -83,7 +83,7 @@ main {
 
 }
 
-@media screen and (min-width: 430px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     nav{
         #my_name{
             padding-left: calc(100% - 70%);

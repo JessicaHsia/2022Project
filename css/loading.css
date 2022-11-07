@@ -49,7 +49,7 @@ a {
   position: absolute;
   top: -5px;
   left: 40px;
-  animation: color 2.3772614991s linear 0.3873435135s infinite;
+  animation: color 2.9515611155s linear 0.2451650208s infinite;
 }
 #preloader #container .circle2 {
   width: 25px;
@@ -59,7 +59,7 @@ a {
   position: absolute;
   top: 20px;
   left: 160px;
-  animation: color 1.6670118341s linear 0.2813859387s infinite;
+  animation: color 2.5435791555s linear 0.2116197841s infinite;
 }
 #preloader #container .circle3 {
   width: 25px;
@@ -69,7 +69,7 @@ a {
   position: absolute;
   top: 140px;
   left: 170px;
-  animation: color 2.3957327387s linear 0.0518316283s infinite;
+  animation: color 1.8320057575s linear 0.1424931717s infinite;
 }
 #preloader #container .circle4 {
   width: 25px;
@@ -79,7 +79,7 @@ a {
   position: absolute;
   top: 180px;
   left: 55px;
-  animation: color 2.8469234358s linear 0.2454404092s infinite;
+  animation: color 1.0625063767s linear 0.4374337875s infinite;
 }
 #preloader #container .circle5 {
   width: 25px;
@@ -89,14 +89,14 @@ a {
   position: absolute;
   top: 90px;
   left: -15px;
-  animation: color 1.3676613029s linear 0.3911064854s infinite;
+  animation: color 1.4213867617s linear 0.0423154004s infinite;
 }
 #preloader .loading h3 {
   width: 100px;
   color: darkgray;
-  position: fixed;
+  position: absolute;
   top: 39%;
-  left: 45.8%;
+  left: 46.5%;
   letter-spacing: 2px;
 }
 @keyframes around {
@@ -130,4 +130,20 @@ a {
 
 .offload {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  #preloader .loading h3 {
+    left: 48%;
+  }
+}
+@media (max-width: 720px) {
+  #preloader .loading h3 {
+    left: 50%;
+  }
+}
+@media (max-width: 590px) {
+  #preloader .loading h3 {
+    left: 52%;
+  }
 }/*# sourceMappingURL=loading.css.map */
