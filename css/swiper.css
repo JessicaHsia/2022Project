@@ -19,24 +19,24 @@ a {
   color: unset;
 }
 
-.swiper {
+main .swiper {
   background-color: unset;
   width: 400px;
   height: 450px;
   transform: translate(-5%, 8%);
 }
-.swiper .swiper-wrapper .swiper-slide {
+main .swiper .swiper-wrapper .swiper-slide {
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.swiper .swiper-wrapper .swiper-slide img {
+main .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 400px;
 }
-.swiper .swiper-wrapper .swiper-slide p {
+main .swiper .swiper-wrapper .swiper-slide p {
   font-family: cursive;
   writing-mode: vertical-lr;
   width: 80px;
@@ -50,20 +50,29 @@ a {
   line-height: unset;
   letter-spacing: 1px;
 }
-.swiper .swiper-wrapper .swiper-slide p a {
+main .swiper .swiper-wrapper .swiper-slide p a {
   width: 100%;
 }
-.swiper .swiper-wrapper .swiper-slide p:hover {
+main .swiper .swiper-wrapper .swiper-slide p:hover {
   transform: scale(1.1);
+}
+main .swiper-pagination {
+  display: none;
 }
 
 @media (max-width: 1024px) {
-  .swiper {
+  main .swiper {
     transform: translate(10%, 30%);
     width: 200px;
     height: 250px;
   }
-  .swiper .swiper-wrapper .swiper-slide img {
+  main .swiper .swiper-wrapper .swiper-slide img {
     width: 300px;
+  }
+  main .swiper-pagination {
+    display: block;
+  }
+  .swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    display: none;
   }
 }/*# sourceMappingURL=swiper.css.map */

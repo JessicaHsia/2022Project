@@ -49,7 +49,7 @@ a {
   position: absolute;
   top: -5px;
   left: 40px;
-  animation: color 2.9302358857s linear 0.3108077324s infinite;
+  animation: color 1.0878859433s linear 0.4823400222s infinite;
 }
 #preloader #container .circle2 {
   width: 25px;
@@ -59,7 +59,7 @@ a {
   position: absolute;
   top: 20px;
   left: 160px;
-  animation: color 2.5866281717s linear 0.3760647633s infinite;
+  animation: color 1.1935541556s linear 0.2977526583s infinite;
 }
 #preloader #container .circle3 {
   width: 25px;
@@ -69,7 +69,7 @@ a {
   position: absolute;
   top: 140px;
   left: 170px;
-  animation: color 1.829841294s linear 0.0721183331s infinite;
+  animation: color 2.2570330435s linear 0.0624936211s infinite;
 }
 #preloader #container .circle4 {
   width: 25px;
@@ -79,7 +79,7 @@ a {
   position: absolute;
   top: 180px;
   left: 55px;
-  animation: color 2.3422937353s linear 0.2858192175s infinite;
+  animation: color 2.806005671s linear 0.2416007225s infinite;
 }
 #preloader #container .circle5 {
   width: 25px;
@@ -89,7 +89,7 @@ a {
   position: absolute;
   top: 90px;
   left: -15px;
-  animation: color 2.3821340458s linear 0.0612160359s infinite;
+  animation: color 2.8351714295s linear 0.4050736399s infinite;
 }
 #preloader .loading {
   width: 200px;

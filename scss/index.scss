@@ -80,7 +80,6 @@ main {
     @include size(calc(100% - 20%), 600px, unset, unset);
     // rgba(237, 214, 157, 0.119)
     @include pos(absolute, 10%, 20%);
-
 }
 
 @media (max-width: 1024px) {

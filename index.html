@@ -87,6 +87,7 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
 
         <!-- <ul id="my_project">
             <li>BMI</li>
@@ -115,11 +116,11 @@
         //loading頁面結束設定
         window.addEventListener("load", function (event) {
             console.log('down');
-            // setTimeout(() => loadingpag.classList.add('offload'), 3000);
+            setTimeout(() => loadingpag.classList.add('offload'), 3000);
         });
 
-        
-        menubox.addEventListener('click', function(){
+
+        menubox.addEventListener('click', function () {
             menuList.classList.toggle('menu-show');
         })
 
@@ -140,6 +141,11 @@
             },
             scrollbar: {
                 el: ".swiper-scrollbar",
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
         });
     </script>
