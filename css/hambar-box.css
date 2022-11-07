@@ -43,7 +43,7 @@ nav .hambar-box .menu-1 {
   width: 150px;
   max-height: 500px;
   position: absolute;
-  top: 10%;
+  top: 15%;
   display: none;
   z-index: 99999;
   transition: max-height 0.8S;
