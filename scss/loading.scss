@@ -108,10 +108,20 @@
 @media (max-width: 720px) {
     #preloader {
         #container{
-            left: 36%;
+            left: 35%;
         }
         .loading{
-            left: 36%;
+            left: 35%;
+        }
+    }
+}
+@media (max-width: 430px) {
+    #preloader {
+        #container{
+            left: 25%;
+        }
+        .loading{
+            left: 25%;
         }
     }
 }
