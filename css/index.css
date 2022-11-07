@@ -44,7 +44,7 @@ header {
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
-  padding: 10px;
+  padding: 50px 10px;
   font-family: cursive;
 }
 header .btn {
@@ -176,10 +176,10 @@ main .team-project li a img {
   background: unset;
   object-fit: cover;
   object-position: left;
-  padding-right: 20px;
+  padding-bottom: 10px;
 }
 main .team-project li a:nth-of-type(2) {
-  padding: 50px 0 0 100px;
+  padding: 80px 0 0 100px;
 }
 main .team-project li a:hover {
   transform: scale(1.1);
