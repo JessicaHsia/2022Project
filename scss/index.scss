@@ -85,7 +85,7 @@ main {
         display: none;
         justify-content: flex-start;
         align-items: center;
-        padding: 5% 0 0 20%;
+        padding: 5% 0 10% 20%;
         li{
             @include flex(center, flex-start);
             flex-direction: column;
@@ -142,7 +142,7 @@ main {
 
     main{
         .team-project{
-            padding: 5% 0 0 5%;
+            padding: 5% 0 10% 5%;
             flex-direction: column;
             li{
                 padding: 50px 0;

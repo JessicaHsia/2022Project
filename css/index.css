@@ -145,7 +145,7 @@ main .team-project {
   display: none;
   justify-content: flex-start;
   align-items: center;
-  padding: 5% 0 0 20%;
+  padding: 5% 0 10% 20%;
 }
 main .team-project li {
   display: flex;
@@ -208,7 +208,7 @@ main .team-project li a:hover {
     padding-left: 60px;
   }
   main .team-project {
-    padding: 5% 0 0 5%;
+    padding: 5% 0 10% 5%;
     flex-direction: column;
   }
   main .team-project li {
