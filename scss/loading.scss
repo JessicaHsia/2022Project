@@ -42,10 +42,11 @@
         }
     }
 
-    .loading h3 {
-        width: 100px;
+    .loading {
+        @include size(200px, 200px, unset, unset);
         color: darkgray;
-        @include pos(absolute, 39%, 46.5%);
+        @include flex(center, center);
+        @include pos(absolute, 30%, 42.5%);
         letter-spacing: 2px;
     }
 
@@ -96,22 +97,21 @@
 
 @media (max-width: 1024px) {
     #preloader {
-        .loading h3{
-            left: 48%;
+        #container{
+            left: 40%;
+        }
+        .loading{
+            left: 40%;
         }
     }
 }
 @media (max-width: 720px) {
     #preloader {
-        .loading h3{
-            left: 50%;
+        #container{
+            left: 36%;
         }
-    }
-}
-@media (max-width: 590px) {
-    #preloader {
-        .loading h3{
-            left: 52%;
+        .loading{
+            left: 36%;
         }
     }
 }
