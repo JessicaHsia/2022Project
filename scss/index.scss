@@ -113,6 +113,22 @@ main {
         }
         
     }
+
+    .resume{
+        display: none;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5% 0 10% 15%;
+        a{
+            img{
+                @include size(300px, 400px, 10px, unset);
+                padding: 10px;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -147,6 +163,10 @@ main {
             li{
                 padding: 50px 0;
             }
+        }
+        .resume{
+            padding: 5% 0 10% 5%;
+            flex-direction: column;
         }
     }
 }
