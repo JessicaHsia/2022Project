@@ -140,7 +140,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script>
-        const body = document.querySelector('body');
+        const main = document.querySelector('main');
         const outbody = document.querySelector('body');
         const loadingpag = document.querySelector('#preloader');
         const menubox = document.querySelector('#menu_all');
@@ -162,7 +162,9 @@
             menuList.classList.toggle('menu-show');
         });
 
-
+        main.addEventListener('click', function(){
+            menuList.classList.remove('menu-show');
+        })
 
 
         // 頁面切換設定

@@ -152,11 +152,12 @@ main {
 @media (max-width: 760px) {
     nav{
         #my_name{
-            padding-left: 60px;
+            padding-left: 90px;
         }
     }
 
-    main{
+main{
+    padding: 5%;
         .team-project{
             padding: 5% 0 10% 5%;
             flex-direction: column;
@@ -165,7 +166,7 @@ main {
             }
         }
         .resume{
-            padding: 5% 0 10% 5%;
+            padding: 5% 0 10% 15%;
             flex-direction: column;
         }
     }

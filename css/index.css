@@ -221,7 +221,10 @@ main .resume a img:hover {
 }
 @media (max-width: 760px) {
   nav #my_name {
-    padding-left: 60px;
+    padding-left: 90px;
+  }
+  main {
+    padding: 5%;
   }
   main .team-project {
     padding: 5% 0 10% 5%;
@@ -231,7 +234,7 @@ main .resume a img:hover {
     padding: 50px 0;
   }
   main .resume {
-    padding: 5% 0 10% 5%;
+    padding: 5% 0 10% 15%;
     flex-direction: column;
   }
 }/*# sourceMappingURL=index.css.map */
