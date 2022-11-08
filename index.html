@@ -37,9 +37,11 @@
             <input type="checkbox" id="menu-switch" hidden>
 
             <ul class="menu-1">
-                <li onclick="myArea()">My Project</li>
+                <li onclick="myArea()">My Work</li>
                 <li onclick="teamArea()">80 sprint</li>
                 <li onclick="resumeArea()">Resume</li>
+                <a href="https://www.facebook.com/jessica.hsia.5"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://line.me/ti/p/tbYoGhY8QY"><i class="fa-brands fa-line"></i></a>
             </ul>
         </ul>
         <ul id="my_name">
@@ -48,7 +50,7 @@
     </nav>
     <header>
         <ul class="btn">
-            <li onclick="myArea()">My Project</li>
+            <li onclick="myArea()">My Work</li>
             <li onclick="teamArea()">80 sprint</li>
             <li onclick="resumeArea()">Resume</li>
         </ul>
@@ -105,7 +107,8 @@
                         <p><a href="https://github.com/JessicaHsia/Tailwind-CSS.git">Tailwind CSS</a></p>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://www.figma.com/file/iHdJHPXhVD3Xu7JUow8qBa/%E8%87%BA%E6%9D%B1%E5%A4%A7%E5%AD%B8%E5%A0%B4%E9%A4%A8%E9%A0%90%E5%80%9F%E7%B3%BB%E7%B5%B1?node-id=1%3A2">
+                        <a
+                            href="https://www.figma.com/file/iHdJHPXhVD3Xu7JUow8qBa/%E8%87%BA%E6%9D%B1%E5%A4%A7%E5%AD%B8%E5%A0%B4%E9%A4%A8%E9%A0%90%E5%80%9F%E7%B3%BB%E7%B5%B1?node-id=1%3A2">
                             <img src="./img/plaining.jpg" />
                         </a>
                         <span>Figma Project</span>
@@ -121,18 +124,23 @@
                     href="https://docs.google.com/document/d/1QcvhOhkz27QBkRhO-9rM6GPxk1Kt4OtP/edit?usp=sharing&ouid=103935938099245850249&rtpof=true&sd=true"><img
                         src="./img/frontdesk-sitemap.jpg" alt="">企劃-前台網站地圖</a>
 
-                <a href="https://athzoa79.github.io/DessertCave_Beta/AboutUs.html"><img src="./img/dessert-cave-story.jpg" alt="">程式-前台介面</a>
+                <a href="https://athzoa79.github.io/DessertCave_Beta/AboutUs.html"><img
+                        src="./img/dessert-cave-story.jpg" alt="">程式-前台介面</a>
             </li>
             <li>
-                <a href="https://docs.google.com/document/d/1n_jdyx_UORMY_LPTnq_LzlMk-kuhmgEZ/edit?usp=sharing&ouid=103935938099245850249&rtpof=true&sd=true"><img src="./img/backdesk-sitemap.jpg" alt="">企劃-後台網站地圖</a>
+                <a
+                    href="https://docs.google.com/document/d/1n_jdyx_UORMY_LPTnq_LzlMk-kuhmgEZ/edit?usp=sharing&ouid=103935938099245850249&rtpof=true&sd=true"><img
+                        src="./img/backdesk-sitemap.jpg" alt="">企劃-後台網站地圖</a>
 
                 <a href="https://jessicahsia.github.io/BackDesk/"><img src="./img/backdesk.jpg" alt="">程式-後台介面</a>
             </li>
 
         </ul>
         <ul class="resume">
-            <a href="./img/Resume_page-0001.jpg" id="openimg-newpage" target="_blank"><img src="./img/Resume_page-0001.jpg" alt=""></a>
-            <a href="./img/Resume_page-0002.jpg" id="openimg-newpage" target="_blank"><img src="./img/Resume_page-0002.jpg" alt=""></a>
+            <a href="./img/Resume_page-0001.jpg" id="openimg-newpage" target="_blank"><img
+                    src="./img/Resume_page-0001.jpg" alt=""></a>
+            <a href="./img/Resume_page-0002.jpg" id="openimg-newpage" target="_blank"><img
+                    src="./img/Resume_page-0002.jpg" alt=""></a>
         </ul>
     </main>
     <footer></footer>
@@ -162,25 +170,25 @@
             menuList.classList.toggle('menu-show');
         });
 
-        main.addEventListener('click', function(){
+        main.addEventListener('click', function () {
             menuList.classList.remove('menu-show');
         })
 
 
         // 頁面切換設定
-        function teamArea(){
+        function teamArea() {
             swiperArea.style.display = 'none';
             teamProject.style.display = 'flex';
             resume.style.display = 'none';
         }
 
-        function myArea(){
+        function myArea() {
             swiperArea.style.display = 'block';
             teamProject.style.display = 'none';
             resume.style.display = 'none';
         }
 
-        function resumeArea(){
+        function resumeArea() {
             swiperArea.style.display = 'none';
             teamProject.style.display = 'none';
             resume.style.display = 'block';

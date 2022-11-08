@@ -46,13 +46,35 @@ nav{
                     background-color: lightgray;
                     color: #FFF;
                 }
-                // a {
-                //     display: block;
-                //     font-size: 18px;
-                //     color: black;
-        
-                    
-                // }
+            }
+
+            a {
+                @include flex(center, center);
+                @include size(100px, 50px, 10%, unset);
+                @include font(12px, black, 200, unset, 2px);
+    
+                .fa,
+                .fa-brands,
+                .fa-classic,
+                .fa-regular,
+                .fa-sharp,
+                .fa-solid,
+                .fab,
+                .far,
+                .fas {
+                    font-size: 25px;
+                    color: grey;
+    
+                    &.fa-facebook:hover {
+                        font-size: 30px;
+                        color: blue;
+                    }
+    
+                    &.fa-line:hover {
+                        font-size: 30px;
+                        color: rgb(50, 235, 124);
+                    }
+                }
             }
         }
         
